@@ -54,7 +54,7 @@ Japanese language settings may be applied using the contents of the Language dir
 
 ## Usage
 
-Review the [ReadMe(SetTabColor).pdf](./Documentation/ReadMe-SetTabColor.pdf) for information on using the project. {[English translation](./Documentation/ReadMe-SetTabColor-English.pdf)}
+Review the [ReadMe(SetTabColor).pdf](./Documentation/ReadMe-SetTabColor.pdf) for information on using the project. {[English translation](./Documentation/ReadMe-SetTabColor-English.docx)}
 
 ## Contributing
 
