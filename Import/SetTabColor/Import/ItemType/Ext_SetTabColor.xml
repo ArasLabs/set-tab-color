@@ -1,0 +1,127 @@
+﻿<AML>
+ <Item type="ItemType" id="020D603A122D4184859278F1308EABCA" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>0</auto_search>
+  <enforce_discovery>1</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <implementation_type>table</implementation_type>
+  <instance_data>EXT_SETTABCOLOR</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>0</is_versionable>
+  <label xml:lang="en">Set Tab Color</label>
+  <label_plural xml:lang="en">Set Tab Color</label_plural>
+  <large_icon>../Images/Write.svg</large_icon>
+  <open_icon>../Images/Write.svg</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>1</show_parameters_tab>
+  <structure_view>tabs off</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>Ext_SetTabColor</name>
+  <Relationships>
+   <Item type="Property" id="DA5C22D4C2E54FC6A269391D4864B656" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="ItemType" type="ItemType" name="ItemType">450906E86E304F55A34B3C0D65C097EA</data_source>
+    <data_type>item</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">Ext_Item</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
+    <track_history>0</track_history>
+    <name>ext_item</name>
+   </Item>
+   <Item type="Property" id="E80EFA982EC24705BF8C27BF1E130604" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>color</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Ext_tab_color</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>30</sort_order>
+    <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
+    <track_history>0</track_history>
+    <name>ext_tab_color</name>
+   </Item>
+   <Item type="Property" id="E9818977B9D148B6B2A28AAF3CE69728" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>color</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>40</sort_order>
+    <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
+    <track_history>0</track_history>
+    <name>ext_tab_font_color</name>
+   </Item>
+   <Item type="Property" id="3384EA7CE97E4FC69CDBD57E86F8EDCE" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="RelationshipType" type="ItemType" name="RelationshipType">471932C33B604C3099070F4106EE5024</data_source>
+    <data_type>item</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">Ext_tab_name</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>20</sort_order>
+    <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
+    <track_history>0</track_history>
+    <name>ext_tab_name</name>
+   </Item>
+   <Item type="View" id="7FA7FBC8FE1D4E2B90C718745684421B" action="add">
+    <client>js</client>
+    <related_id keyed_name="Ext_SetTabColor" type="Form">90E893157D8C491FB973AD242AB831D0</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>0</show_ssvc>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="TOC Access" id="B70754FFF6EE49B59D68DDBEA8B946CA" action="add">
+    <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
+    <category>Administration/Configuration</category>
+   </Item>
+   <Item type="Can Add" id="EADBAB41FBD1438B8C712A57B68DB001" action="add">
+    <can_add>1</can_add>
+    <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
+   </Item>
+   <Item type="Allowed Permission" id="1FD2AD6EEDE94EDDBE4E59333E624094" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="Administrators" type="Permission">5BE54C871FB14F6EBC11596D1A010D26</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

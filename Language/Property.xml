@@ -1,0 +1,110 @@
+<export>
+  <Item keyed_name="generation" config_id="07CFF04824AF450DB2C4A5B174FFA1C6">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="new_version" config_id="124786C55D154409B217A62DB5FC5189">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="team_id" config_id="198C82419AA24E2E889B16E1FAB23EB9">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="major_rev" config_id="225DC01C762D4FF782237CA41A4DFE69">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="is_released" config_id="26202F1549CA48D2A3FC38A283980CF9">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="ext_tab_name" config_id="3384EA7CE97E4FC69CDBD57E86F8EDCE">
+    <property __name="label" ja="対象タブリレーション名称" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="minor_rev" config_id="4FE7087F01664442B705DB2824D71AC4">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="created_on" config_id="748C9CA849F848F1BF5E4C80B6A82E42">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="owned_by_id" config_id="798F1A259045455CAA9E4D94DB22F807">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="css" config_id="7B63410F1FE14ADFAC63D8549076C8E6">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="modified_on" config_id="81AB60FEE9924403BCA2E7AA11603660">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="created_by_id" config_id="AC1D180469BF4D0E926B547C28FBA010">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="id" config_id="BEEFD97CEC2645219B25E33D5B5EEFDA">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="keyed_name" config_id="C4CAE99A0C2C45BB9621EC4F4AE2D2BA">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="classification" config_id="CB0D8BDECCF24A5C85DF6E573F3D907E">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="state" config_id="D436045A7AE64D4784BC6A8661AACE59">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="locked_by_id" config_id="D74C237589984AAAA5D56E09B3AD3696">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="current_state" config_id="D78A48C24E8543D1B9BC71A1B3C3F1D4">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="ext_item" config_id="DA5C22D4C2E54FC6A269391D4864B656">
+    <property __name="label" ja="対象アイテムタイプ" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="not_lockable" config_id="DCFADD10FCB64CA4B3F2984DC7140D31">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="is_current" config_id="E2BCFF9B5271400B8A91BECED98B7E62">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="permission_id" config_id="E4B80CAF94A04DB6AC225E8CF4A3FF27">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="ext_tab_color" config_id="E80EFA982EC24705BF8C27BF1E130604">
+    <property __name="label" ja="対象タブ配色" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="ext_tab_font_color" config_id="E9818977B9D148B6B2A28AAF3CE69728">
+    <property __name="label" ja="対象文字配色" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="modified_by_id" config_id="E9E29E40FCF2429688A5DE8A6F5D1CB2">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="config_id" config_id="F98CA45A94694976BDCA6466E3C0AC79">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+  <Item keyed_name="managed_by_id" config_id="FE276EE68B514D09B4FBE2D74AB20D87">
+    <property __name="label" ja="" zh="" />
+    <property __name="default_value" ja="" zh="" />
+  </Item>
+</export>

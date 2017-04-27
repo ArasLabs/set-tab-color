@@ -1,0 +1,7 @@
+<export>
+  <Item keyed_name="Ext_SetTabColor" config_id="020D603A122D4184859278F1308EABCA">
+    <property __name="label" ja="タブカラー設定" zh="" />
+    <property __name="label_plural" ja="タブカラー設定" zh="" />
+    <property __name="help_url" ja="" zh="" />
+  </Item>
+</export>

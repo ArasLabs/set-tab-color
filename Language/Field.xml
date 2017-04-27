@@ -1,0 +1,22 @@
+<export>
+  <Item keyed_name="ext_item" config_id="1EE6ECD4C99D4634A980206201044285">
+    <property __name="label" ja="対象アイテムタイプ" zh="" />
+    <property __name="legend" ja="" zh="" />
+  </Item>
+  <Item keyed_name="ext_tab_color" config_id="48DF33EF70FF45839AE9162E572974D6">
+    <property __name="label" ja="対象配色" zh="" />
+    <property __name="legend" ja="" zh="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="5B039BC065C9488DA2F30FB747D1C634">
+    <property __name="label" ja="" zh="" />
+    <property __name="legend" ja="" zh="" />
+  </Item>
+  <Item keyed_name="ext_tab_name" config_id="6257AE9A027740C3A748EB0FC10E4D5C">
+    <property __name="label" ja="対象タブリレーション名称" zh="" />
+    <property __name="legend" ja="" zh="" />
+  </Item>
+  <Item keyed_name="ext_tab_font_color" config_id="6F245AE197AA430890BB1008E570B183">
+    <property __name="label" ja="対象文字配色" zh="" />
+    <property __name="legend" ja="" zh="" />
+  </Item>
+</export>
