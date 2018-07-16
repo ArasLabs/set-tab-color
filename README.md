@@ -14,6 +14,7 @@ This project and the following release notes have been migrated from the old Ara
 
 Release | Notes
 --------|--------
+[v3.1.0](https://github.com/ArasLabs/set-tab-color/releases/tag/v3.1.0) | Automatically configures the OnLoad form event for the Ext_SetTabColor method.
 [v3.0.0](https://github.com/ArasLabs/set-tab-color/releases/tag/v3.0.0) | Support the tabbed client in Aras 11 SP12-14. May also work in 11 SP8-SP11, but has not been tested.
 [v2.0.0](https://github.com/ArasLabs/set-tab-color/releases/tag/v2.0.0) | Support version 11SP6. Instructions are described in the ReadMe.pdf. AKA [v11SP6](https://github.com/ArasLabs/set-tab-color/releases/tag/v11SP6).
 [v1.0.0](https://github.com/ArasLabs/set-tab-color/releases/tag/v1.0.0) | Support version 11SP5. Instructions are described in the ReadMe.pdf. AKA [v11SP5](https://github.com/ArasLabs/set-tab-color/releases/tag/v11SP5).
