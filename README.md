@@ -60,7 +60,17 @@ Japanese language settings may be applied using the contents of the Language dir
 
 ![Screenshot Gif](Screenshots/screenshot.gif)
 
-Review the [ReadMe(SetTabColor).pdf](./Documentation/ReadMe-SetTabColor.pdf) for information on using the project. {[English translation](./Documentation/ReadMe-SetTabColor-English.docx)}
+1. Login to Innovator as admin.
+2. Navigate to **Administration > Configuration > Set Tab Color** in the table of contents (TOC).
+3. Click **Add New** to create a new tab color setting.
+4. Fill out the form:
+    * Ext_Item: The parent ItemType of the tab you want to style
+    * Ext_tab_name: The RelationshipType of the tab you want to style
+    * Ext_tab_color: The background color of the tab
+    * Ext_tab_font_color: The font color of the tab
+5. Click the green checkmark to save, unlock, and close the tab color setting.
+6. Repeat steps 3-5 for all tabs you want to style.
+Review the [ReadMe(SetTabColor).pdf](./Documentation/ReadMe-SetTabColor.pdf) for additional information on using the project. {[English translation](./Documentation/ReadMe-SetTabColor-English.docx)}
 
 ## Contributing
 
