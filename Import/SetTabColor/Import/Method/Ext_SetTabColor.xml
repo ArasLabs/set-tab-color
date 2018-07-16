@@ -2,40 +2,48 @@
  <Item type="Method" id="A4BC24EC6B8E4854BE911180C5D476E9" action="add">
   <comments />
   <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
-  <method_code><![CDATA[var maxCheck = 30;
-
-{
-  if(!parent.document.frames.relationships)
-  {
-   if(--maxCheck==0) { return; }
+  <method_code><![CDATA[// Updates relationship tabs based on the tab styles defined via Ext_SetTabColor items
 function changeTabColor() {
+    if (!parent.relationships) {
         setTimeout(changeTabColor, 50);
         return;
     }
 
-  var tabbar= top.relationships.relTabbar;
-  var dom = tabbar.domNode;
+    // this is the dom for the relationships grid/tabs
+    var rel_dom = parent.relationships.document;
 
     //タブカラーマスタの取得
     // Acquire tab color master
     var inn = Innovator();
     var itemName = document.thisItem.getType();
     var itm_color = inn.newItem("Ext_SetTabColor");
+    
     var itm_ItemType = inn.newItem("ItemType");
     itm_ItemType.setProperty("name", itemName);
-    itm_color.setPropertyItem("ext_item", itm_ItemType);
-  itm_color.setAttribute("select","ext_item,ext_tab_color,ext_tab_name(name),ext_tab_font_color");
-    itm_color = itm_color.apply("get");
-  if( itm_color.isError() || itm_color.getItemCount() == 0) {return this;}
     
-  //dijitオブジェクトを利用して、"widgetid"をKeyに情報を取得
+    itm_color.setPropertyItem("ext_item", itm_ItemType);
+    itm_color.setAttribute("select", "ext_item,ext_tab_color,ext_tab_name(name,label),ext_tab_font_color");
+    itm_color = itm_color.apply("get");
+    
+    if (itm_color.isError() || itm_color.getItemCount() === 0) {
+        return this;
+    }
+
+    // set style of each tab with a configuration item
     for (var i = 0; i < itm_color.getItemCount(); i++) {
         var itm = itm_color.getItemByIndex(i);
+        
+        // build style string from configuration item
         var style = "";
-      style = "background-Color:" + itm.getProperty("ext_tab_color","#FFFFFF") + ";";
+        style = "background-color:" + itm.getProperty("ext_tab_color", "#FFFFFF") + ";";
         style += "color: " + itm.getProperty("ext_tab_font_color", "") + ";";
-      var tabId = tabbar._getTab(top.aras.getRelationshipTypeId(itm.getPropertyItem("ext_tab_name").getProperty("name",""))).id;
-      parent.dijit.byId("centerMiddle_relTabbar_tablist_" + tabId).setAttribute("style",style);
+
+        // get the relationshiptype id from the configuration item
+        var relId = itm.getProperty("ext_tab_name", "");
+        
+        // get the tab element using the relationship id
+        var tab = rel_dom.querySelector('li[data-id="' + relId + '"]');
+        tab.setAttribute("style", style);
     }
 }
 
