@@ -104,6 +104,18 @@
     <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
     <type>default</type>
    </Item>
+   <Item type="Server Event" id="EF50EE28009E41EA992427CD7D22FD64" action="add">
+    <event_version>version_1</event_version>
+    <is_required>0</is_required>
+    <related_id keyed_name="Ext_AddFormEvent" type="Method">
+     <Item type="Method" action="get" select="id">
+      <name>Ext_AddFormEvent</name>
+     </Item>
+    </related_id>
+    <server_event>onAfterAdd</server_event>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Ext_SetTabColor" type="ItemType" name="Ext_SetTabColor">020D603A122D4184859278F1308EABCA</source_id>
+   </Item>
    <Item type="TOC Access" id="B70754FFF6EE49B59D68DDBEA8B946CA" action="add">
     <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
     <sort_order>128</sort_order>
