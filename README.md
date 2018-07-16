@@ -70,6 +70,9 @@ Japanese language settings may be applied using the contents of the Language dir
     * Ext_tab_font_color: The font color of the tab
 5. Click the green checkmark to save, unlock, and close the tab color setting.
 6. Repeat steps 3-5 for all tabs you want to style.
+
+> Note: As of release [v3.1.0](https://github.com/ArasLabs/set-tab-color/releases/tag/v3.1.0), the Ext_SetTabColor method will be automatically added to all forms for the "ext_item" when you create a new tab color setting. If you want to disable this behavior, you can remove the Ext_AddFormEvent server event from the Ext_SetTabColor ItemType. However, this means that you will need to manually add an OnLoad event to every form that should use colored tabs.
+
 Review the [ReadMe(SetTabColor).pdf](./Documentation/ReadMe-SetTabColor.pdf) for additional information on using the project. {[English translation](./Documentation/ReadMe-SetTabColor-English.docx)}
 
 ## Contributing
