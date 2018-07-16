@@ -1,0 +1,81 @@
+﻿<AML>
+ <Item type="Method" id="5CB9A0DEF0774B698E4FABF2E7B2245E" action="add">
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[// When an Ext_SetTabColor item is created, we'll check to see if the associated 
+// itemtype's forms have an OnLoad event to style the relationship tabs.
+// If not, we'll automatically create the form event for the admin.
+
+// check whether there are other Ext_SetTabColor items for this itemtype
+Innovator inn = this.getInnovator();
+string itemtype_id = this.getProperty("ext_item","");
+
+if (itemtype_id == "")
+    return this;
+    
+Item items = inn.newItem("Ext_SetTabColor","get");
+items.setProperty("ext_item",itemtype_id);
+items = items.apply();
+
+if (items.isError() || items.getItemCount() <= 0 || items.getItemCount() > 1)
+    return this; // there's an error or already items with this itemtype
+
+// check whether the form(s) have an OnLoad event for the Ext_SetTabColor method
+string aml = "";
+aml += "<AML>";
+aml += "  <Item type='View' action='get' select='related_id'>";
+aml += "    <related_id>";
+aml += "      <Item type='Form' action='get' select='id'>";
+aml += "        <Relationships>";
+aml += "          <Item type='Form Event' action='get' select='related_id,form_event' />";
+aml += "        </Relationships>";
+aml += "      </Item>";
+aml += "    </related_id>";
+aml += "    <source_id>" + itemtype_id + "</source_id>";
+aml += "  </Item>";
+aml += "</AML>";
+
+Item views = inn.applyAML(aml);
+
+if (views.isError() || views.getItemCount() <= 0)
+    return this; // no views to check
+    
+Item forms_with_event = views.getItemsByXPath("//Item[@type='Form']/Relationships/Item/related_id/Method[name='Ext_SetTabColor']");
+
+if (forms_with_event.getItemCount() > 0)
+    return this; // forms already have the event
+
+// create the event for the form(s) without the OnLoad event
+Item forms = views.getItemsByXPath("//Item[@type='Form' and not(Relationships/Item/related_id/Item[name='Ext_SetTabColor'])]");
+
+if (forms.isError() || forms.getItemCount() < 1)
+    return this; // error or no forms missing the event
+    
+Item method = inn.newItem("Method","get");
+method.setProperty("name","Ext_SetTabColor");
+method.setProperty("is_current","1");
+method = method.apply();
+
+for (int i = 0; i < forms.getItemCount(); i++)
+{
+    Item form = forms.getItemByIndex(i);
+    form.setAction("edit");
+    
+    Item form_event = inn.newItem("Form Event","add");
+    form_event.setProperty("form_event","onload");
+    form_event.setRelatedItem(method);
+    
+    form.addRelationship(form_event);
+    form = form.apply();
+}
+
+return this;
+
+
+
+
+
+]]></method_code>
+  <method_type>C#</method_type>
+  <name>Ext_AddFormEvent</name>
+ </Item>
+</AML>
