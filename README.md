@@ -56,6 +56,8 @@ Japanese language settings may be applied using the contents of the Language dir
 
 ## Usage
 
+![Screenshot Gif](Screenshots/screenshot.gif)
+
 Review the [ReadMe(SetTabColor).pdf](./Documentation/ReadMe-SetTabColor.pdf) for information on using the project. {[English translation](./Documentation/ReadMe-SetTabColor-English.docx)}
 
 ## Contributing
@@ -69,3 +71,6 @@ Review the [ReadMe(SetTabColor).pdf](./Documentation/ReadMe-SetTabColor.pdf) for
 ## Credits
 
 Created by NEOSYSTEM Co., Ltd.
+
+**Other Contributors:**
+* Eli Donahue for Aras Labs (@elijdonahue)
