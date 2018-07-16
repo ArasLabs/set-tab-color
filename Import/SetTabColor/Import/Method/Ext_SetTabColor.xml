@@ -10,32 +10,33 @@ function changeCelColor()
   {
    if(--maxCheck==0) { return; }
    setTimeout(changeCelColor,50);
-   return;
-  }
-  
+        return;
+    }
+
   var tabbar= top.relationships.relTabbar;
   var dom = tabbar.domNode;
-  
-  //タブカラーマスタの取得
-  var inn = top.Innovator();
-  var itemName = document.thisItem.getType();
-  var itm_color = inn.newItem("Ext_SetTabColor");
-  var itm_ItemType = inn.newItem("ItemType");
-  itm_ItemType.setProperty("name", itemName);
-  itm_color.setPropertyItem("ext_item", itm_ItemType);
+
+    //タブカラーマスタの取得
+    // Acquire tab color master
+    var inn = Innovator();
+    var itemName = document.thisItem.getType();
+    var itm_color = inn.newItem("Ext_SetTabColor");
+    var itm_ItemType = inn.newItem("ItemType");
+    itm_ItemType.setProperty("name", itemName);
+    itm_color.setPropertyItem("ext_item", itm_ItemType);
   itm_color.setAttribute("select","ext_item,ext_tab_color,ext_tab_name(name),ext_tab_font_color");
-  itm_color = itm_color.apply("get");
+    itm_color = itm_color.apply("get");
   if( itm_color.isError() || itm_color.getItemCount() == 0) {return this;}
-  
+    
   //dijitオブジェクトを利用して、"widgetid"をKeyに情報を取得
-  for (var i = 0; i < itm_color.getItemCount(); i++){
-      var itm = itm_color.getItemByIndex(i);
-      var style ="";
+    for (var i = 0; i < itm_color.getItemCount(); i++) {
+        var itm = itm_color.getItemByIndex(i);
+        var style = "";
       style = "background-Color:" + itm.getProperty("ext_tab_color","#FFFFFF") + ";";
-      style += "color: " + itm.getProperty("ext_tab_font_color","") + ";";
+        style += "color: " + itm.getProperty("ext_tab_font_color", "") + ";";
       var tabId = tabbar._getTab(top.aras.getRelationshipTypeId(itm.getPropertyItem("ext_tab_name").getProperty("name",""))).id;
       parent.dijit.byId("centerMiddle_relTabbar_tablist_" + tabId).setAttribute("style",style);
-   }
+    }
 }
 
 changeCelColor()
