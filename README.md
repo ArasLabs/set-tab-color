@@ -23,6 +23,7 @@ Release | Notes
 
 Project | Aras
 --------|------
+[v3.1.0](https://github.com/ArasLabs/set-tab-color/releases/tag/v3.1.0) | 11.0 SP12-14
 [v3.0.0](https://github.com/ArasLabs/set-tab-color/releases/tag/v3.0.0) | 11.0 SP12-14
 [v2.0.0](https://github.com/ArasLabs/set-tab-color/releases/tag/v2.0.0) | 11.0 SP6
 [v1.0.0](https://github.com/ArasLabs/set-tab-color/releases/tag/v1.0.0) | 11.0 SP5
